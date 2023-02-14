@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "sudoku.brain.puzzle",
+      "sha256_cert_fingerprints": [
+        "87:54:97:14:43:0E:95:1B:ED:2E:4E:05:E3:4A:BD:0F:B3:9B:89:F4:00:83:F7:8A:8E:85:34:EA:AD:A5:43:90"
+      ]
+    }
+  }
+]
