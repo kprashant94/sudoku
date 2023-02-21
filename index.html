@@ -1,24 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Sudoku - Classic Sudoku Puzzle</title>
-  </head>
-  <body>
-    <div id="header">
-      <img src="media/icon.png" alt="Sudoku App Icon">
-      <h1>Sudoku App</h1>
-    </div>
-    
-    <div id="image">
-      <img src="media/poster.jpg" alt="Sudoku App 1024x500 Image">
-    </div>
-    
-    <div id="video">
-      <iframe width="560" height="315" src="https://youtu.be/wlSF3GH-w80" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    
-    <div id="download">
-      <a href="https://play.google.com/store/apps/details?id=sudoku.brain.puzzle"><button>Download on Google Play</button></a>
-    </div>
-  </body>
+<head>
+	<title>Sudoku - Classic Sudoku Puzzle</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #0077be;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+		h1 {
+			font-size: 2em;
+			margin: 0;
+		}
+		.container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		.poster {
+			margin-bottom: 20px;
+		}
+		.poster img {
+			max-width: 100%;
+		}
+		.video {
+			margin-bottom: 20px;
+			display: flex;
+			justify-content: center;
+		}
+		.video iframe {
+			width: 560px;
+			height: 315px;
+		}
+		.download {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+		.download a {
+			display: inline-block;
+			background-color: #0077be;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			text-decoration: none;
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+		.app-icon {
+			display: inline-block;
+			vertical-align: middle;
+			width: 50px;
+			height: 50px;
+			margin-right: 10px;
+		}
+		.app-title {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 2em;
+			font-weight: bold;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Sudoku - Classic Sudoku Puzzle</h1>
+	</header>
+	<div class="container">
+		<div class="poster">
+			<img src="media/poster.jpg" alt="Sudoku poster">
+		</div>
+		<div class="video">
+			<iframe width="560" height="315" src="https://www.youtube.com/watch?v=wlSF3GH-w80" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="download">
+			<a href="https://play.google.com/store/apps/details?id=com.example.sudoku">
+				<img class="app-icon" src="media/icon.png" alt="Sudoku app icon">
+				<span class="app-title">Sudoku - Classic Sudoku Puzzle</span>
+			</a>
+		</div>
+	</div>
+</body>
 </html>
